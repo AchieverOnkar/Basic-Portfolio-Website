@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="#contact" class="nav-name">Onkar Ingole</a>
+            <a href="#welcome-section" class="nav-link">ABOUT</a>
+            <a href="#skills" class="nav-link">SKILLS</a>
+            <a href="#projects" class="nav-link">PROJECTS</a>
+            <a href="#experience" class="nav-link">EXPERIENCE</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
+    </header>
+    <script>// Select all nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        // Add a click event listener to each nav link
+        navLinks.forEach(link => {
+          link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+        
+            const targetId = this.getAttribute('href'); // Get the target section ID
+            const targetElement = document.querySelector(targetId); // Get the target section element
+        
+            if (targetElement) {
+              // Smoothly scroll to the target section
+              window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+        </script>
+   <div id="welcome-section">
+        <h1 class="wel-text">
+            Hi, I'm Onkar, a passionate Software Developer.
+        </h1>
+        <p>
+            I am a recent graduate with a Bachelor's degree, driven by a 
+           love for coding and problem-solving. My goal is to contribute
+            innovative solutions to real-world challenges through my skills 
+            in software development.
+        </p>
+   </div>
+
+   <section class="skills" id="skills">
+        <p class="skill-title">Professional Skills</p>
+        <div class="skill-ctn">
+            <div class="skill-card">
+                <div class="skill-card-txt">
+                    <p class="skill-name">Java</p>
+                    <p class="percentage-text">80%</p>
+                </div>
+                <div class="skill-percentage"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-txt">
+                    <p class="skill-name">JavaScript</p>
+                    <p class="percentage-text">70%</p>
+                </div>
+                <div class="skill-percentage js"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-txt">
+                    <p class="skill-name">Html</p>
+                    <p class="percentage-text">90%</p>
+                </div>
+                <div class="skill-percentage html"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-txt">
+                    <p class="skill-name">Css</p>
+                    <p class="percentage-text">80%</p>
+                </div>
+                <div class="skill-percentage css"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-txt">
+                    <p class="skill-name">Sql</p>
+                    <p class="percentage-text">80%</p>
+                </div>
+                <div class="skill-percentage sql"></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-txt">
+                    <p class="skill-name">Java Framworks</p>
+                    <p class="percentage-text">70%</p>
+                </div>
+                <div class="skill-percentage advjava"></div>
+            </div>
+        </div>
+
+   </section>
+
+   <section  id="projects">
+        <p class="skill-title">Personal Projects</p>
+        <div class="project-tile-ctn">
+            <div class="project-tile">
+                <a href="https://github.com/AchieverOnkar/Myntra-Ui-Clone" _blank>
+                <img class="project-img" src="https://user-images.githubusercontent.com/110045725/214582124-593c99c9-f434-4301-8017-c3c292a98963.png" alt="">
+                </a>
+                <div class="tile-text">
+                    Myntra Ui clone
+                </div>
+            </div>
+            <div class="project-tile">
+                <a href="https://github.com/AchieverOnkar/Amazon-UI-Clone" _blank>
+                <img class="project-img" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/549/590/datas/original.png" alt="">
+                </a>
+                <div class="tile-text">
+                    Amazon Ui clone
+                </div>
+            </div>
+            <div class="project-tile">
+                <a href="">
+                <img class="project-img" src="https://miro.medium.com/v2/resize:fit:612/1*IEvCzclpZEQa5b1ZnzNhJw.png" alt="">
+                <div class="tile-text">
+                    Quiz-App
+                </div>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://github.com/AchieverOnkar/com.calculator.app" _blank>
+                <img class="project-img" src="https://assets.materialup.com/uploads/de257ad8-7763-4f5f-ae77-86adda838471/preview.jpg" alt="">
+                </a>
+                <div class="tile-text">
+                    Calculator App
+                </div>
+            </div>
+        </div>
+        <button class="show"><a href="https://github.com/AchieverOnkar" _blank>all</a>  ></button>
+   </section>
+   <section id="experience">
+        <p class="title">Work Experience</p>
+        <div class="exp-container">
+            <div class="exp-comp-ctn">
+                <p class="exp-time">March - June</p>
+                <p class="exp-company">KodeNest</p>
+            </div>
+            <div class="exp-role-ctn">
+                <p class="exp-role">Full Stack Developer intern</p>
+                <p class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dignissimos consectetur tenetur quaerat doloribus blanditiis 
+                    est eos quasi assumenda explicabo voluptatum quam aliquid nobis,
+                    debitis ad doloremque neque earum fugiat aliquam.
+                </p>
+            </div>
+        </div>
+   </section>
+   <section id="education">
+        <p class="title">Education</p>
+        <div class="exp-container">
+            <div class="exp-comp-ctn">
+                <p class="exp-time">2020-2023</p>
+                <p class="exp-company">Bachelor's Degree</p>
+            </div>
+            <div class="exp-role-ctn">
+                <p class="exp-role">Bachelor of Technology
+                    <span class="University">            D.B.A.T.U. University</span>
+                </p>
+                
+                <p class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dignissimos consectetur tenetur quaerat doloribus blanditiis 
+                    est eos quasi assumenda explicabo voluptatum quam aliquid nobis,
+                    debitis ad doloremque neque earum fugiat aliquam.
+                </p>
+            </div>
+        </div>
+
+        <div class="exp-container">
+            <div class="exp-comp-ctn">
+                <p class="exp-time">2015-2020</p>
+                <p class="exp-company">Diploma</p>
+            </div>
+            <div class="exp-role-ctn">
+                <p class="exp-role">Diploma in Mechanical Engineering
+                    <span class="University">            S.E.S Polytechnic</span>
+                </p>
+                
+                <p class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dignissimos consectetur tenetur quaerat doloribus blanditiis 
+                    est eos quasi assumenda explicabo voluptatum quam aliquid nobis,
+                    debitis ad doloremque neque earum fugiat aliquam.
+                </p>
+            </div>
+        </div>
+    </section>
+   <section class="work-wth-me" id="contact">
+       <div class="map">
+        <div class="contact-ctn">
+            <div class="contact-title">Contact Me</div>
+            <div class="contact-info">
+                <p class="header">Address:</p>
+                <p class="details">152,Mantri Chadak Angan, Hydrabad Road, Solapur</p>
+                <p class="header">Mobile:</p>
+                <p class="details">+918669107399</p>
+                <p class="header">Email:</p>
+                <p class="details">ingoleonkar152@gmail.com</p>
+            </div>
+        </div>
+       </div>
+   </section>
+</body>
+<footer>
+
+</footer>
+</html>
